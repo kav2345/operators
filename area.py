@@ -1,3 +1,4 @@
+'''
 Finding the Area of a Triangle
 Problem Statement
 Ajay, Binoy, and Chandru decide to test their geometry skills. They want to calculate the area of the triangle formed by their house coordinates. Given the coordinates of the 3 vertices of a triangle (x1,y1)(x_1, y_1)(x1​,y1​), (x2,y2)(x_2, y_2)(x2​,y2​), and (x3,y3)(x_3, y_3)(x3​,y3​), write a Python program to find the area of the triangle.
@@ -30,4 +31,23 @@ y3 = int(input())
 
 area = abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)) / 2
 
+print(f"The area of the triangle is {area:.2f}")
+'''
+# Function to calculate the area of a triangle given its vertex coordinates
+def calculate_triangle_area(x1, y1, x2, y2, x3, y3):
+    area = abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)) / 2
+    return area
+
+# Read input values for the coordinates
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+x3 = int(input())
+y3 = int(input())
+
+# Calculate the area
+area = calculate_triangle_area(x1, y1, x2, y2, x3, y3)
+
+# Print the result formatted to two decimal places
 print(f"The area of the triangle is {area:.2f}")
