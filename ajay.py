@@ -1,3 +1,4 @@
+'''
 Ajay, Binoy and Chandru were very close friends at school. They were very good in Mathematics and they were the pet students of Emily Mam. Their gang was known as 3-idiots.
 Ajay, Binoy and Chandru live in the same locality. A new student Dinesh joins their class and he wanted to be friends with them. He asked Binoy about his house address.
 Binoy wanted to test Dinesh's mathematical skills. Binoy told Dinesh that his house is at the midpoint of the line joining Ajay's house and Chandru's house. Dinesh was puzzled.
@@ -13,3 +14,22 @@ Input (stdin)
  
 Output (stdout)
 Binoy's house is located at (6.0,9.5)
+'''
+
+# Function to calculate the midpoint
+def calculate_midpoint(x1, y1, x2, y2):
+    midpoint_x = (x1 + x2) / 2
+    midpoint_y = (y1 + y2) / 2
+    return midpoint_x, midpoint_y
+
+# Read input values
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+
+# Calculate midpoint
+midpoint = calculate_midpoint(x1, y1, x2, y2)
+
+# Print the result formatted to one decimal place
+print(f"Binoy's house is located at ({midpoint[0]:.1f},{midpoint[1]:.1f})")
