@@ -1,4 +1,4 @@
-'''
+***
 Tamilnadu was battling one if it’s worst floods in a century last December, as several part of the state have been submerged and cut off from essential supplies. It was heartening that the Cricketers came forward to contribute for the cause of floods and it was decided amongst the team that the senior players donate 50% of their salary and junior players to donate 40% against the flood relief measures
 Assume there are 6 senior players and 5 junior players. The salary of senior players Rs.X and that of junior players is Rs.Y. Find the total contribution from the cricket team towards the floods.
 Input format:
@@ -14,4 +14,26 @@ Sample input and output 2:
 78000
 60000
 354000.00
-'''
+
+***
+def calculate_contribution():
+    # Input the salaries of senior and junior players
+    senior_salary = int(input())
+    junior_salary = int(input())
+    
+    # Define the number of players
+    num_senior_players = 6
+    num_junior_players = 5
+    
+    # Calculate contributions
+    senior_contribution = (senior_salary * 0.50) * num_senior_players
+    junior_contribution = (junior_salary * 0.40) * num_junior_players
+    
+    # Total contribution
+    total_contribution = senior_contribution + junior_contribution
+    
+    # Print the total contribution rounded to 2 decimal places
+    print(f"{total_contribution:.2f}")
+
+if __name__ == "__main__":
+    calculate_contribution()
