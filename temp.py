@@ -1,3 +1,4 @@
+***
 You are given a temperature in Celsius. You need to convert it to Fahrenheit.
 Input and Output Format
 Input Format:
@@ -19,3 +20,15 @@ Sample Input 3
 100
 Sample Output 3
 212.0
+
+***
+def convert_celsius_to_fahrenheit():
+    celsius = int(input())
+    
+    # Conversion formula: F = (C * 9/5) + 32
+    fahrenheit = (celsius * 9/5) + 32
+    
+    print(fahrenheit)
+
+if __name__ == "__main__":
+    convert_celsius_to_fahrenheit()
